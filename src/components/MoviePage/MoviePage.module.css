@@ -1,0 +1,67 @@
+.MoviePage{
+    width: 100vw;
+    height: 100vh;
+}
+
+#imgBack {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.movieData{
+    position: absolute;
+    z-index: 50;
+    top: 15vh;
+    left: 10vw;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 70vw;
+    height: 70vh;
+}
+
+.movieData h1 {
+    text-shadow: .2rem .2rem .6rem black;
+    margin-bottom: 2rem;
+}
+
+.movieData p {
+    width: 30vw;
+    text-align: justify;
+}
+
+.genres{
+    margin-top: 1rem;
+}
+
+.genres span {
+    margin-right: 1rem;
+    font-size: small;
+    font-weight: 300;
+}
+
+
+#imgPoster{
+    width: 25vw;
+    height: 100%;
+    object-fit: cover ;
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.59);
+}
+
+#gradient{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.texts{
+    margin-left: 1rem;
+}

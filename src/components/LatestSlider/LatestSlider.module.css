@@ -1,0 +1,71 @@
+.LatestSliderContainer{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+.LatestSliderContainer h2,.LatestSliderContainer span {
+    margin-left: 2rem;
+    color: white;
+    font-size: medium;
+}
+
+
+.LatestSlider {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 40vh;
+  width: 98vw;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding-left: 2rem;
+  transition: ease-in-out 0.2s;
+  scroll-behavior: smooth;
+  z-index: 1;
+}
+
+
+.rectangleRight{
+width: 6.5rem;
+position: absolute;
+top: 1rem;
+right: 0;
+z-index: 8;
+transform: rotate(180deg);
+}
+
+
+
+.rightChevron{
+    width: 2rem;
+    position: absolute;
+    filter: invert();
+    top: 25vh;
+    right: 1rem;
+    z-index: 10;
+    transition: ease-in-out 0.1s;
+}
+
+
+.rightChevron:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+
+.leftChevron{
+width: 2rem;
+position: absolute;
+filter: invert();
+top: 25vh;
+left: 1rem;
+z-index: 10;
+transition: ease-in-out 0.1s;
+}
+
+
+.leftChevron:hover{
+transform: scale(1.5);
+cursor: pointer;
+}

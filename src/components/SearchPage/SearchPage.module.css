@@ -1,0 +1,42 @@
+.SearchPage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SearchPageContainer{
+    width: 100%;
+    height: 100%;
+    margin-top: 340px;
+    
+}
+
+
+#searchBox{
+ width: 95%;
+ padding: 1.2rem;
+ padding-left: 3rem;
+ font-size: 25px;
+ background-color: rgba(255, 255, 255, 0.073);
+ border: none;
+ color: white;
+}
+
+#searchBox:focus{
+ outline: none;
+}
+
+
+@media  screen and (max-width: 600px) {
+    #searchBox{
+        width: 80%;
+        padding: 1.2rem;
+        padding-left: 3rem;
+        font-size: 25px;
+        background-color: rgba(255, 255, 255, 0.073);
+        border: none;
+        color: white;
+       }
+  }

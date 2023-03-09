@@ -1,0 +1,105 @@
+.HeroBack {
+  width: 100vw;
+  height: 800px;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+  transition: ease-in-out 0.3s;
+}
+
+.HeroImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logoContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 3rem;
+  left: 3rem;
+  z-index: 20;
+  text-align: left;
+}
+
+.logoContainer img {
+  margin-bottom: 1rem;
+}
+
+.logoContainer h2,
+span {
+  margin-left: 0;
+  color: white;
+  font-size: medium;
+}
+
+.logoContainer span{
+    font-weight: 700;
+}
+
+.logoContainer h2 {
+    font-weight: 400;
+}
+
+.logoContainer a {
+  width: 120px;
+  height: 30px;
+  background: rgb(31, 3, 68);
+  background: linear-gradient(
+    97deg,
+    rgb(47, 13, 92) 0%,
+    rgb(83, 38, 157) 45%,
+    rgb(203, 12, 225) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.7rem;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+  transition: ease-in-out 0.1s;
+}
+
+.logoContainer a:hover {
+   transform: scale(1.1);
+   cursor: pointer;
+  }
+  
+.HeroImage  {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+  @media screen and (max-width: 600px) {
+    .logoContainer {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      bottom: 3rem;
+      left: 3rem;
+      z-index: 20;
+      text-align: left;
+      width: 80vw;
+    }
+  }
