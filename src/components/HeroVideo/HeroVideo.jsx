@@ -3,19 +3,18 @@ import Style from "../HeroVideo/HeroVideo.module.css";
 import gradient from "../Slider/gradienthero.svg";
 
 function HeroVideo({ video, logo, imagen, id }) {
-  const [mobile, setMobile] = useState(false);
+  
+const[image,setImage]=useState(false);
 
-  useEffect(() => {
-    window.onresize = function () {
-      if (window.innerWidth <= 600) {
-        setMobile(true);
-      } else {
-        setMobile(false);
-      }
-    };
-  });
 
-  if (mobile) {
+useEffect(()=>{
+  setTimeout(()=>{
+    setImage(true)
+  },4000)
+},[])
+
+
+if (!image) {
     return (
       <>
         <img className={Style.HeroImage} src={imagen} alt="" />
@@ -23,7 +22,7 @@ function HeroVideo({ video, logo, imagen, id }) {
           <img src={logo} alt="Imagen serie" />
           <span>Las historias que amas y nuevas por descubrir</span>
           <h2>Emocionate con estrenos de peliculas y series iconicas</h2>
-          <a href={id}>VER AHORA</a>
+          <a href={id} className="p-3" >VER AHORA</a>
         </div>
         <img className={Style.gradient} src={gradient} alt="" />
       </>
@@ -31,12 +30,12 @@ function HeroVideo({ video, logo, imagen, id }) {
   } else {
     return (
       <>
-        <video src={video} autoPlay loop muted></video>
+        <video src={video} className="w-[100vw] h-[100vh] object-cover bg-bgTertiaryColor" autoPlay loop muted></video>
         <div className={Style.logoContainer}>
           <img src={logo} alt="Imagen serie" />
           <span>Las historias que amas y nuevas por descubrir</span>
           <h2>Emocionate con estrenos de peliculas y series iconicas</h2>
-          <a href={id}>VER AHORA</a>
+          <a href={id} className="p-3">VER AHORA</a>
         </div>
         <img className={Style.gradient} src={gradient} alt="" />
       </>

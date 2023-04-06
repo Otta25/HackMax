@@ -10,7 +10,8 @@ import HeroVideo from "../HeroVideo/HeroVideo";
 import logoRick from "../Slider/rick.png";
 import logoGot from "../Slider/got.png";
 import logoTlou from "../Slider/tlou.png";
-
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 function Slider() {
   const [sliderCounter, setSliderCounter] = useState(0);
@@ -23,28 +24,23 @@ function Slider() {
       setSliderCounter(0);
     }
   }, [sliderCounter]);
-
-  if (sliderCounter === 0) {
-    return (
-        <div className={Style.Slider}>
-          <HeroVideo video={video1} logo={logoRick} imagen={imgRick} />
-        </div>
-    );
-  }
-  if (sliderCounter === 1) {
-    return (
-      <div className={Style.Slider}>
+  return (
+    <Carousel
+      autoPlay={true}
+      infiniteLoop={true}
+      interval={45500}
+      showStatus={false}
+      showThumbs={false}
+      showIndicators={true}
+      showArrows={false}
+      swipeable={false}
+      className='h-[70vh]'
+    >
+        <HeroVideo video={video1} logo={logoRick} imagen={imgRick} />
         <HeroVideo video={video2} logo={logoGot} imagen={imgGot} />
-      </div>
-    );
-  }
-  if (sliderCounter === 2) {
-    return (
-      <div className={Style.Slider}>
         <HeroVideo video={video3} logo={logoTlou} imagen={imgTlou} />
-      </div>
-    );
-  }
+    </Carousel>
+  );
 }
 
 export default Slider;

@@ -3,12 +3,18 @@
 }
 
 
+
 .App {
 text-align: center;
 background-image: url(/src/background.png);
-width: 100vw;
 }
 
+.home {
+  text-align: center;
+  background-image: url(/src/background.png);
+  background-size: cover;
+  height: 300vh;
+  }
 
 .movies-container{
   width: 90%;
@@ -17,4 +23,11 @@ width: 100vw;
   gap: 1rem;
   margin: auto;
   margin-top: 2rem;
+}
+
+.celebrating{
+  background-image: url(../src/components/Celebrating/background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

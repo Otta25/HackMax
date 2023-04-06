@@ -1,6 +1,6 @@
 .Slider {
     width: 100vw;
-    height: 800px;
+    object-fit: cover;
     background-color: rgb(0, 0, 0);
     margin-bottom: 1rem;
     position: relative;

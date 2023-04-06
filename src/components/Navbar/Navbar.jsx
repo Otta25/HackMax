@@ -52,7 +52,7 @@ function Navbar() {
     }
       else {
       return (
-        <nav className={Style.NavbarMobileinScroll}>
+        <nav className={Style.Navbar}>
           <div className="burger">
             <ul>
               <li>
