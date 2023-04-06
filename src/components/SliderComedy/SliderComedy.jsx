@@ -61,11 +61,11 @@ function SliderComedy() {
     return (
       <>
         <div  className='mt-2'>
-            <div className='flex flex-col text-left ml-5'>
+            <div className='flex flex-col text-left ml-5 px-[4rem]'>
                 <h2 className=' font-bold'>Peliculas de accion</h2>
                 <span>Vivi la mas intensa accion sin moverte de tu sofa!</span> 
             </div>
-          <Slider className={Style.slider} {...settings}>
+          <Slider className='px-[4rem]' {...settings}>
             {movies?.map((movie) => (
               <Movie
                 key={movie.id}

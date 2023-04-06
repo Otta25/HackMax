@@ -19,8 +19,6 @@ function Navbar() {
     };
   }, [userHasScrolled]);
 
-
-
   if (userHasScrolled) {
       return (
         <nav className={Style.NavbarInScroll}>
@@ -29,22 +27,19 @@ function Navbar() {
               <li>
                 <img id={Style.burger} src={burger} alt="burger image" />
               </li>
-              <li>Peliculas</li>
-              <li>Series</li>
             </ul>
           </div>
           <Link to="/">
-            <img id={Style.logo} src={logo} alt="Logo Hack Max" />
+            <img id={Style.logo} className="ml-3" src={logo} alt="Logo Hack Max" />
           </Link>
           <div className="searchbox">
             <ul>
-              <li>
-                <Link to="/buscar">
+              <Link to="/buscar">
+                <li>
                   <img id={Style.lupa} src={lupa} alt="" />
-                </Link>
-              </li>
-              <li>Iniciar sesion</li>
-              <li>Suscribete</li>
+                </li>
+              </Link>
+              <li>Iniciar</li>  
             </ul>
           </div>
         </nav>

@@ -8,7 +8,7 @@ import SliderComedy from '../SliderComedy/SliderComedy';
 function Home() {
   document.title = 'Hack Max'
   return (
-    <div className='home flex flex-col'>
+    <div>
         <Slider></Slider>
         <LatestSlider/>
         <Celebrating/>

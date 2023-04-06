@@ -62,7 +62,7 @@ const settings = {
 return (
   <>
     <div className='mt-[40vh]'>
-      <Slider className={Style.slider} {...settings}>
+      <Slider className='px-[4rem]' {...settings}>
         {movies?.map((movie) => (
           <Movie
             key={movie.id}

@@ -7,14 +7,9 @@
 .App {
 text-align: center;
 background-image: url(/src/background.png);
+background-size: cover;
 }
 
-.home {
-  text-align: center;
-  background-image: url(/src/background.png);
-  background-size: cover;
-  height: 300vh;
-  }
 
 .movies-container{
   width: 90%;
