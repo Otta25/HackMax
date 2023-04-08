@@ -42,7 +42,9 @@ function Navbar() {
                   <img id={Style.lupa} src={lupa} alt="" />
                 </li>
               </Link>
-              <li>Iniciar</li>  
+              <Link to='/login'>
+                <li>Login</li>
+              </Link>
             </ul>
           </div>
         </nav>
