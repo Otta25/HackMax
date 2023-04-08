@@ -43,10 +43,6 @@
   margin-left: 2rem;
 }
 
-
-
-
-
 #logoMobile {
   width: 7rem;
   filter: invert();
@@ -57,6 +53,7 @@
 #burger {
   width: 2rem;
   filter: invert();
+  margin-right: 4rem;
 }
 
 #burgerMobile {

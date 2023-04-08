@@ -5,9 +5,11 @@ import burger from "../Navbar/burgermenu.svg";
 import lupa from "../Navbar/lupa.png";
 import { Link } from "react-router-dom";
 
+
 function Navbar() {
   const [userHasScrolled, setUserHasScrolled] = useState(false);
-  const [mobileMode, setMobileMode] = useState(false);
+
+
 
   useEffect(() => {
     window.onscroll = function (e) {
@@ -21,6 +23,7 @@ function Navbar() {
 
   if (userHasScrolled) {
       return (
+        <div>
         <nav className={Style.NavbarInScroll}>
           <div className="burger">
             <ul>
@@ -43,6 +46,7 @@ function Navbar() {
             </ul>
           </div>
         </nav>
+        </div>
       );
     }
       else {
